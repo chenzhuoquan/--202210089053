@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class GitText {
 
-
+ //加密第一步，将字符串的每个字符转化为ASCII值并进行加值操作
     public static char[] encryptFirst(char []nums){
 
         for(int i=0;i<nums.length;i++){
@@ -18,6 +18,7 @@ public class GitText {
         return nums;
     }
 
+//解密第一步，将字符串的每个字符转化为ASCII值并进行减值操作
     public static char[] encryptFirst1(char []nums){
 
         for(int i=0;i<nums.length;i++){
@@ -30,6 +31,7 @@ public class GitText {
         }
         return nums;
     }
+    //加密第二步，将字符数组中的首尾进行调换
     public static char[] encryptSecond(char[] nums2){
         char i=' ';
         int length=nums2.length;
@@ -38,6 +40,7 @@ public class GitText {
         nums2[length-1]=i;
         return nums2;
     }
+    
     public static boolean judgeNum(char[]nums3){
         boolean flag=true;
         for(char i:nums3){
